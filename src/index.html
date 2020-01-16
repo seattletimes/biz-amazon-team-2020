@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <%= t.include("partials/_head.html", grunt.data.json) %>
+    <% if (json.project.production && !json.project.embedded) { %>
+      <%= t.include("partials/_dataLayer.html") %>
+      <%= t.include("partials/_gtm.html") %>
+    <% } %>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <% if (json.project.production && !json.project.embedded) { %>
+      <%= t.include("partials/_gtmNoScript.html") %>
+    <% } %>
+    <responsive-child>
+      <!-- content goes here -->
+      <h2>Sort</h2>
+      <div id="sorts" class="button-group">
+        <button class="button" data-sort-by="name">name</button>
+        <button class="button" data-sort-by="tenure">tenure</button>
+        <button class="button" data-sort-by="age">age</button>
+        <button class="button" data-sort-by="gender">gender</button>
+      </div>
+
+      <div id="card-holder">
+        <% json.steam.sort(function(a, b) { return a.order - b.order }).forEach(function(item, i) { %>
+          <%= t.include("partials/_card.html", { item: item, index: i }) %>
+        <% }) %>
+      </div>
+    </responsive-child>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="app.js" async></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>

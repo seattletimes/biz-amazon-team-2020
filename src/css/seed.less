@@ -1,0 +1,61 @@
+@import "seattletimes";
+
+// Accent colors
+// @df-blue: rgb(7, 119, 179);
+// @df-maroon: rgb(192, 33, 138);
+// @df-orange: rgb(188, 92, 35);
+// @df-orange-highlight: rgb(208, 103, 35);
+// @df-goldenrod: rgb(225, 135, 39);
+// @df-navy: rgb(43, 77, 112);
+
+#card-holder {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+
+  border: 1px solid #333;
+}
+
+
+/* clear fix */
+#card-holder:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+.card {
+  flex: 1;
+  align-self: stretch;
+  display: inline-block;
+//   width: 200px;
+//   margin: 0.5em;
+//   vertical-align: top;
+//   background-color: #ddd;
+//
+//   .description {
+//     padding: 1em;
+//
+//     h3 { margin-top: 0; }
+//   }
+}
+
+.card {
+  // position: relative;
+  // float: left;
+  width: 200px;
+  height: 300px;
+  margin: 5px;
+  padding: 10px;
+  color: white;
+
+  h3 { margin: 0 0 0.5em 0; color: white; }
+}
+
+.card > * {
+  margin: 0;
+  padding: 0;
+}

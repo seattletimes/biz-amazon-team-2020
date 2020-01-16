@@ -1,0 +1,26 @@
+<div class="card C<%= item.Gender %> C<%= item.Tenure_noper %> C<%= item.Age %> C<%= item.NameLast %>" data-gender="<%= item.Gender %>" data-age="<%= item.age_alpha %>" data-index="<%= index %>">
+  <div class="description">
+    <h3 class="name"><%= item.NameFirst %> <span class="last"><%= item.NameLast %></span></h3>
+
+    <div class="tenure"><%= item.Tenure %> years at Amazon</div>
+    <!-- <div class="gender"><%= item.Gender %></div> -->
+
+    <% if (item.Age < 99) { %>
+      <div class="age"><%= item.Age %></div>
+    <% } else { %>
+      <div class="age">Age not available</div>
+    <% } %>
+
+    <% if(item.Education !== "na") { %>
+      <div class="edu"><%= item.Education %></div>
+    <% } else { %>
+      <div class="edu">Education not available</div>
+    <% } %>
+
+    <!-- <% if(item.Age > 0) { %>
+      <div class="age"><%= item.Age %></div>
+    <% } else { %>
+      <div class="age">Not Available</div>
+    <% } %> -->
+  </div>
+</div>
