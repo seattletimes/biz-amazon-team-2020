@@ -1,4 +1,5 @@
-<div class="card C<%= item.Gender %> C<%= item.Tenure_noper %> C<%= item.Age %> C<%= item.NameLast %>" data-gender="<%= item.Gender %>" data-age="<%= item.age_alpha %>" data-index="<%= index %>">
+<div class="card C<%= item.Gender %> C<%= item.Tenure_noper %> C<%= item.age_bucket %> C<%= item.NameLast %>" data-gender="<%= item.Gender %>" data-age="<%= item.age_alpha %>" data-index="<%= index %>">
+  <div class="color-bar"></div>
   <div class="description">
     <h3 class="name"><%= item.NameFirst %> <span class="last"><%= item.NameLast %></span></h3>
 
@@ -6,15 +7,28 @@
     <!-- <div class="gender"><%= item.Gender %></div> -->
 
     <% if (item.Age < 99) { %>
-      <div class="age"><%= item.Age %></div>
+      <div class="age"><%= item.Age %> years old</div>
     <% } else { %>
       <div class="age">Age not available</div>
     <% } %>
 
+    <div class="eduHeader">Education</div>
     <% if(item.Education !== "na") { %>
       <div class="edu"><%= item.Education %></div>
     <% } else { %>
       <div class="edu">Education not available</div>
+    <% } %>
+
+    <% if(item.HigherEd !== "na") { %>
+      <div class="edu"><%= item.HigherEd %></div>
+    <% } else { %>
+
+    <% } %>
+
+    <% if(item.HigherEd2 !== "na") { %>
+      <div class="edu"><%= item.HigherEd2 %></div>
+    <% } else { %>
+
     <% } %>
 
     <!-- <% if(item.Age > 0) { %>

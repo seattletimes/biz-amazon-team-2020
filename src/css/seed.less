@@ -7,6 +7,30 @@
 // @df-orange-highlight: rgb(208, 103, 35);
 // @df-goldenrod: rgb(225, 135, 39);
 // @df-navy: rgb(43, 77, 112);
+.chart-sub {
+  margin-bottom: 0.3em;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+.button-group {
+  margin-bottom: 2em;
+}
+
+.button {
+  font-size: 19px;
+  width: 110px;
+  font-weight: 900;
+  text-align: left;
+
+  i {
+    display: none;
+    color: blue;
+    margin-left: 5px;
+    font-size: 25px;
+    float: right;
+    line-height: 0.8em;
+  }
+}
 
 #card-holder {
   display: inline-flex;
@@ -34,13 +58,16 @@
 //   width: 200px;
 //   margin: 0.5em;
 //   vertical-align: top;
-//   background-color: #ddd;
+  background-color: #ece9e9;
 //
 //   .description {
 //     padding: 1em;
 //
 //     h3 { margin-top: 0; }
 //   }
+
+  .color-bar { height: 25px; margin-bottom: 0px; }
+  .description { padding: 10px; }
 }
 
 .card {
@@ -49,13 +76,43 @@
   width: 200px;
   height: 300px;
   margin: 5px;
-  padding: 10px;
-  color: white;
+  font-family: sans-serif;
+  font-size: 0.9em;
+  // padding: 10px;
+  // color: white;
 
-  h3 { margin: 0 0 0.5em 0; color: white; }
+  h3 { margin: 0 0 0.5em 0; }
+
+  .eduHeader {
+    font-weight: 900;
+  }
+  .edu {
+    font-size: 0.9em;
+    line-height: 1.1em;
+    margin-bottom: 10px;
+  }
 }
 
 .card > * {
   margin: 0;
   padding: 0;
+}
+
+#keys {
+
+  .key {
+    display: none;
+
+    div {
+      vertical-align: middle;
+      display: inline-block;
+
+      .block {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-right: 5px;
+       }
+    }
+  }
 }
