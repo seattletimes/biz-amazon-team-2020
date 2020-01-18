@@ -17,15 +17,15 @@
       <!-- content goes here -->
       <h3 class="chart-sub">Pick a category to sort the S-team's profiles</h3>
       <div id="sorts" class="button-group">
-        <button id="name" class="button active asc" data-sort-by="name">name <i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
-        <button id="tenure" class="button" data-sort-by="tenure">tenure <i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
-        <button id="age" class="button" data-sort-by="age">age<i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
-        <button id="gender" class="button" data-sort-by="gender">gender<i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <button id="name" class="button active asc" data-sort-by="name" data-color-by="nameC">name <i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <button id="tenure" class="button" data-sort-by="tenure" data-color-by="tenureC">tenure <i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <button id="age" class="button" data-sort-by="age" data-color-by="ageC">age<i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <button id="gender" class="button" data-sort-by="gender" data-color-by="genderC">gender<i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       </div>
 
       <div id="keys">
 
-        <div class="tenure-key key" data-array="tenureColors">
+        <div class="tenure-key key" data-color-by="tenureC">
           <div class="first"><div class="block"></div>0 - 5 years at Amazon</div>
           <div class="second"><div class="block"></div>6 - 10 years at Amazon</div>
           <div class="third"><div class="block"></div>11 - 15 years at Amazon</div>
@@ -34,7 +34,7 @@
           <div class="fifth"><div class="block"></div>25 - 30 years at Amazon</div>
         </div>
 
-        <div class="age-key key" data-array="ageColors">
+        <div class="age-key key" data-color-by="ageC">
           <div class="first"><div class="block"></div>40 - 45 years old </div>
           <div class="second"><div class="block"></div>46 - 50 years old</div>
           <div class="third"><div class="block"></div>51 - 55 years old</div>
@@ -42,7 +42,7 @@
           <div class="fifth"><div class="block"></div>61 - 65 years old</div>
         </div>
 
-        <div class="gender-key key" data-array="genderColors">
+        <div class="gender-key key" data-color-by="genderC">
           <div class="first"><div class="block"></div>Female</div>
           <div class="second"><div class="block"></div>Male</div>
         </div>

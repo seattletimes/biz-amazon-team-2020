@@ -19,10 +19,21 @@ var nameColors = ['#001969', '#10226e', '#1c2b74', '#253379', '#2d3c7f', '#34458
 var ageColors = ['#fdd0a2', '#fdae6b', '#fd8d3c', '#e6550d', '#a63603','#aaa'];
 var tenureColors = ['#f2f0f7','#dadaeb','#bcbddc', '#9e9ac8', '#756bb1', '#54278f'];
 
+var myObj = {
+  "name": nameArray,
+  "tenure": tenureArray,
+  "age": ageArray,
+  "gender": genderArray,
+  "nameC": nameColors,
+  "tenureC": tenureColors,
+  "ageC": ageColors,
+  "genderC": genderColors
+};
+
 $('.key').each(function(i, obj) {
     var number = $(this).find('div.block').length;
-    var corr_colors = $( this ).attr('data-array');
-    corr_colors = eval(corr_colors);
+    var corr_colors = $( this ).attr('data-color-by');
+    corr_colors = myObj[corr_colors];
     // var thisColor = corr_colors[i];
     console.log(corr_colors);
 
@@ -31,7 +42,7 @@ $('.key').each(function(i, obj) {
         // console.log( number + "  "  );
         $(this).find( 'div:nth-child(' + (x + 1) + ')' ).find('.block').css("background-color", corr_colors[x] );
         // $(eachBlock).append("yay" + x);
-        console.log(this);
+        // console.log(this);
       }
 });
 
@@ -100,19 +111,19 @@ function assignColors(colorArray, classArray) {
 
 assignColors(nameColors, nameArray);
 
-var sortByValue = "";
 
 // bind sort button click
 $('#sorts').on( 'click', 'button', function() {
-  sortByValue = $(this).attr('data-sort-by');
+  var sortByValue = $(this).attr('data-sort-by');
+  var colorByValue = $(this).attr('data-color-by');
 
-  var array = sortByValue + "Array";
-  var colors = sortByValue + "Colors";
+  // var array = sortByValue + "Array";
+  // var colors = sortByValue + "Colors";
 
 
 
 
-  assignColors( eval(colors), eval(array) );
+  assignColors( myObj[colorByValue], myObj[sortByValue] );
 
   if ($(this).hasClass('active')) {
 
@@ -173,8 +184,3 @@ $('#sorts .button:nth-child(1)').find('.fa-caret-up').show();
 //     $( this ).addClass('is-checked');
 //   });
 // });
-
-// var myObj = {
-//   "button1": results1,
-//   "button2": results2,
-// };
