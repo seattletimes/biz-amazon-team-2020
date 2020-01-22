@@ -11,13 +11,19 @@
   margin-bottom: 0.3em;
   font-weight: 900;
   font-family: sans-serif;
+  text-align: center;
+  text-transform: uppercase;
 }
 .button-group {
+  margin: auto;
   margin-bottom: 2em;
+
+  text-align: center;
 }
 
 .button {
   font-size: 19px;
+  text-transform: uppercase;
 
   font-weight: 900;
   text-align: left;
@@ -25,7 +31,6 @@
   margin: 1px;
   width: 49%;
   border: 1px solid #aaa;
-  border-radius: 5px;
   box-shadow: 1px 1px #aaa;
 
   i {
@@ -54,8 +59,9 @@
   width: 100%;
   max-width: 1270px;
   margin: auto;
+  border-top: 2px solid #aaa;
 
-  border: 1px solid #333;
+
 }
 
 
@@ -72,9 +78,8 @@
   // float: left;
 
   width: 48%;
-  // height: 300px;
+  height: 400px;
   margin: 2px;
-  border: 1px solid #aaa;
   font-family: sans-serif;
   font-size: 0.9em;
   flex: 1;
@@ -88,6 +93,11 @@
   .description { padding: 10px; }
 
   h3 { margin: 0 0 0.5em 0; }
+
+  .position {
+    line-height: 0.9em;
+    margin-bottom: 5px;
+  }
 
   .eduHeader {
     font-weight: 900;
@@ -112,6 +122,8 @@
 // }
 
 #keys {
+  font-family: sans-serif;
+  text-align: center;
 
   .key {
     display: none;
@@ -119,12 +131,13 @@
     div {
       vertical-align: middle;
       display: inline-block;
+      text-align: center;
 
       .block {
-        width: 20px;
+        width: 70px;
         height: 20px;
-        display: inline-block;
-        margin-right: 5px;
+        display: block;
+        margin: auto;
        }
     }
   }
