@@ -3,7 +3,12 @@
   <div class="description">
     <h3 class="name"><%= item.NameFirst %> <span class="last"><%= item.NameLast %></span></h3>
 
-    <div class="position"><%= item.Title %></div>
+    <div class="position"><span class="title"><%= item.Title %></span>
+
+      <% if(item.Major) { %>
+        <span class="area"><%= item.Title2 %></span>
+      <% } %>
+    </div>
 
     <div class="tenure"><%= item.Tenure %> years at Amazon</div>
     <!-- <div class="gender"><%= item.Gender %></div> -->
@@ -15,28 +20,41 @@
     <% } %>
 
     <div class="eduHeader">Education</div>
-    <% if(item.Education !== "na") { %>
-      <div class="edu"><%= item.Education %></div>
-    <% } else { %>
-      <div class="edu">Education not available</div>
-    <% } %>
 
-    <% if(item.HigherEd !== "na") { %>
-      <div class="edu"><%= item.HigherEd %></div>
-    <% } else { %>
+    <div class="edu">
+      <div class="school"><%= item.Education %></div>
 
-    <% } %>
+      <% if(item.Major) { %>
+        <div class="major"><%= item.Major %></div>
+      <% } %>
+    </div>
 
-    <% if(item.HigherEd2 !== "na") { %>
-      <div class="edu"><%= item.HigherEd2 %></div>
-    <% } else { %>
 
-    <% } %>
+    <div class="edu">
+      <% if(item.HigherEd !== "na") { %>
+        <div class="school"><%= item.HigherEd %></div>
+      <% } %>
 
-    <!-- <% if(item.Age > 0) { %>
-      <div class="age"><%= item.Age %></div>
-    <% } else { %>
-      <div class="age">Not Available</div>
-    <% } %> -->
+      <% if(item.Major2) { %>
+        <div class="major"><%= item.HigherEdMajor %></div>
+      <% } %>
+
+      <% if(item.MBA1) { %>
+        <div class="mba"><%= item.MBA1 %></div>
+      <% } %>
+    </div>
+
+    <div class="edu">
+      <% if(item.HigherEd2) { %>
+        <div class="school"><%= item.HigherEd2 %></div>
+      <% } %>
+
+      <% if(item.MBA2) { %>
+        <div class="mba"><%= item.MBA2 %></div>
+      <% } %>
+    </div>
+
+
+
   </div>
 </div>

@@ -1,16 +1,132 @@
 [
   {
+    "": "",
     "Age": "Tenure",
     "as of 1/12/20 (source: Washington voter registration database, other public records)": "Approximate Amazon tenure in years (Source: LinkedIn bios)"
   },
   {
+    "": "",
     "Age": 23,
     "as of 1/12/20 (source: Washington voter registration database, other public records)": "sabbatical Jan. 2020",
     "undefined": "https://www.linkedin.com/in/jeff-b-b033a3/"
   },
   {
+    "": "",
     "Age": 24,
     "as of 1/12/20 (source: Washington voter registration database, other public records)": "departing Amazon Jan. 2020",
     "undefined": "Capitol IQ"
+  },
+  {
+    "": "NameLast",
+    "Age": "Education",
+    "as of 1/12/20 (source: Washington voter registration database, other public records)": "HigherEd",
+    "undefined": "HigherEd2"
+  },
+  {
+    "": "Bezos",
+    "Age": "Princeton, 1986, electrical engineering and computer science, summa cum laude"
+  },
+  {
+    "": "Wilke",
+    "Age": "Princeton, 1989, chemical engineering, summa cum laude",
+    "as of 1/12/20 (source: Washington voter registration database, other public records)": "Massachusettes Institute of Technology, 1993, MBA/MS, chemical engineering"
+  },
+  {
+    "": "Jassy",
+    "Age": "Harvard, 1990",
+    "as of 1/12/20 (source: Washington voter registration database, other public records)": "Harvard Business School, 1997, MBA"
+  },
+  {
+    "": "Limp",
+    "Age": "Vanderbilt, computer science and mathematics",
+    "as of 1/12/20 (source: Washington voter registration database, other public records)": "Stanford Graduate School of Business, MS, management"
+  },
+  {
+    "": "Olsavsky",
+    "Age": "Penn State, BS, mechanical engineering",
+    "as of 1/12/20 (source: Washington voter registration database, other public records)": "Carnegie Mellon University, MBA"
+  },
+  {
+    "": "Zapolsky",
+    "Age": "Columbia, A.B. Music, 1985",
+    "as of 1/12/20 (source: Washington voter registration database, other public records)": "UC Berkeley School of Law, 1988"
+  },
+  {
+    "": "Galetti",
+    "Age": "Lehigh, 1993, electrical engineering",
+    "as of 1/12/20 (source: Washington voter registration database, other public records)": "Colorado Technical University, 1997, MBA"
+  },
+  {
+    "": "Carney",
+    "Age": "Yale, 1987, BA, Russian and East European Studies"
+  },
+  {
+    "": "Clark",
+    "Age": "Auburn University, 1996, education",
+    "as of 1/12/20 (source: Washington voter registration database, other public records)": "University of Tennessee-Knoxville, 1999, MBA, logistics and transportation"
+  },
+  {
+    "": "Herrington",
+    "Age": "Princeton, 1988, AB, economics, summa cum laude",
+    "as of 1/12/20 (source: Washington voter registration database, other public records)": "Harvard Business School, 1992, MBA"
+  },
+  {
+    "": "Grandinetti",
+    "Age": "Princeton, 1993, BSE, operations research"
+  },
+  {
+    "": "Bell",
+    "Age": "University of California, Fullerton, 1981, Bachelor’s, Management Information Systems"
+  },
+  {
+    "": "Kotas",
+    "Age": "Courant Institute of Mathematical Sciences, New York University, MS, Mathematics, 1987; SUNY Buffalo, BS, Engineering Science, 1987"
+  },
+  {
+    "": "Taylor",
+    "Age": "Virginia Tech, 1984, BS, mechanical engineering",
+    "as of 1/12/20 (source: Washington voter registration database, other public records)": "Massachusettes Institute of Technology, 1991, Master’s in Management and Mechanical Engineering"
+  },
+  {
+    "": "Agarwal",
+    "Age": "Indian Institute of Technology Kanpur, 1995, B.Tech., Computer Science",
+    "as of 1/12/20 (source: Washington voter registration database, other public records)": "Stanford, 1997, masters, computer science"
+  },
+  {
+    "": "DeSantis",
+    "Age": "Dartmouth College, 1998, BA, economics and computer science"
+  },
+  {
+    "": "Garman",
+    "Age": "Stanford, 1998, BS, industrial engineering",
+    "as of 1/12/20 (source: Washington voter registration database, other public records)": "Stanford, 1999, MS, industrial engineering",
+    "undefined": "Northwestern Kellogg School of Management, 2006, MBA"
+  },
+  {
+    "": "Prasad",
+    "Age": "Birla Institute of Technology, 1997, BE, electronics and communication engineering",
+    "as of 1/12/20 (source: Washington voter registration database, other public records)": "Illinois Institute of Technology, 1999, MS, electrical engineering",
+    "undefined": "Greater Boston Executive Program, MIT Sloan School of Management, 2008"
+  },
+  {
+    "": "Lindsay",
+    "Age": "Edith Cowan University, 1988, BA, applied science",
+    "as of 1/12/20 (source: Washington voter registration database, other public records)": "Golden Gate University, 1992, MBA"
+  },
+  {
+    "": "Krawiec",
+    "Age": "Trinity College-Hartford, 1995, economics",
+    "as of 1/12/20 (source: Washington voter registration database, other public records)": "Northwestern Kellogg School of Management, 2000, MBA"
+  },
+  {
+    "": "Aubrey",
+    "Age": "Canberra University, 1995, applied science",
+    "as of 1/12/20 (source: Washington voter registration database, other public records)": "Sydney Institute of Technology, 2000, human resources",
+    "undefined": "Macquarie University, MBA"
+  },
+  {
+    "": "Beauchamp",
+    "Age": "Princeton, 1992",
+    "as of 1/12/20 (source: Washington voter registration database, other public records)": "Harvard Business School, 1997, MBA"
   }
 ]
