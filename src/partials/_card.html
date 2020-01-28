@@ -1,29 +1,42 @@
 <div class="card C<%= item.Gender %> C<%= item.Tenure_noper %> C<%= item.age_bucket %> C<%= item.NameLast %>" data-gender="<%= item.Gender %>" data-age="<%= item.age_alpha %>" data-index="<%= index %>">
   <div class="color-bar"></div>
   <div class="description">
-    <h3 class="name"><%= item.NameFirst %> <span class="last"><%= item.NameLast %></span></h3>
 
-    <div class="position"><span class="title"><%= item.Title %></span>
+    <div class="headshot">
+      <img src="./assets/headshots/<%= item.NameLast %>.jpg">
+    </div>
 
-      <% if(item.Major) { %>
-        <span class="area"><%= item.Title2 %></span>
+    <div class="name"><%= item.NameFirst %> <span class="last"><%= item.NameLast %></span>, <%= item.Age %></div>
+
+    <div class="position"><%= item.Title %>
+      <% if(item.Title2) { %>
+        <%= item.Title2 %>
       <% } %>
     </div>
 
-    <div class="tenure"><%= item.Tenure %> years at Amazon</div>
-    <!-- <div class="gender"><%= item.Gender %></div> -->
+    <!-- <div class="tenure"><%= item.Tenure %> years at Amazon</div> -->
 
-    <% if (item.Age < 99) { %>
-      <div class="age"><%= item.Age %> years old</div>
-    <% } else { %>
-      <div class="age">Age not available</div>
-    <% } %>
+    <!-- <div class="age">Age</div>
+    <div class="ageBar">
+      <span class="bar"></span>
+      <div class="averageAge">&nbsp;</div>
+      <div class="avgLabel">51 avg.</div>
+    </div> -->
+
+    <div class="eduHeader">Years at Amazon</div>
+    <div class="tenureBar">
+      <span class="bar"><%= item.Tenure %></span>
+      <div class="avgTen">&nbsp;</div>
+      <div class="avgLabel2">16 avg.</div>
+    </div>
+
 
     <div class="eduHeader">Education</div>
 
+
+
     <div class="edu">
       <div class="school"><%= item.Education %></div>
-
       <% if(item.Major) { %>
         <div class="major"><%= item.Major %></div>
       <% } %>
@@ -34,26 +47,24 @@
       <% if(item.HigherEd !== "na") { %>
         <div class="school"><%= item.HigherEd %></div>
       <% } %>
-
       <% if(item.Major2) { %>
         <div class="major"><%= item.HigherEdMajor %></div>
       <% } %>
-
       <% if(item.MBA1) { %>
         <div class="mba"><%= item.MBA1 %></div>
       <% } %>
     </div>
 
+    <% if(item.HigherEd2) { %>
     <div class="edu">
       <% if(item.HigherEd2) { %>
         <div class="school"><%= item.HigherEd2 %></div>
       <% } %>
-
       <% if(item.MBA2) { %>
         <div class="mba"><%= item.MBA2 %></div>
       <% } %>
     </div>
-
+    <% } %>
 
 
   </div>

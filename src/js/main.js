@@ -46,17 +46,30 @@ var $grid = $('#card-holder').isotope({
   getSortData: {
     name: '.last',
     age: '[data-age]',
-    tenure: '.tenure parseInt',
+    tenure: '.bar parseInt',
     gender: '[data-gender]'
   }
 });
 
-
+var cardWidth = $('.card').width();
+console.log(cardWidth);
 
 $.each(data, function(index, element) {
     var member_age = element.Age;
+    var member_ten = element.Tenure;
+    console.log(member_ten);
+    var percentage = (member_age / 62)*100;
+    var percentageTen = (member_ten / 25.5)*100;
+    console.log(percentageTen);
+
     var member_tenure = element.Tenure_noper;
     ( nameArray.includes(element.NameLast) ) ? "" : nameArray.push(element.NameLast);
+
+
+
+    // $('#card-holder').find(`.C${ element.NameLast}`).find('.ageBar .bar').css('width',`${percentage}%`);
+
+    $('#card-holder').find(`.C${ element.NameLast}`).find('.tenureBar .bar').css('width',`${percentageTen}%`);
 });
 
 
