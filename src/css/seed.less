@@ -1,12 +1,9 @@
 @import "seattletimes";
 
-// Accent colors
-// @df-blue: rgb(7, 119, 179);
-// @df-maroon: rgb(192, 33, 138);
-// @df-orange: rgb(188, 92, 35);
-// @df-orange-highlight: rgb(208, 103, 35);
-// @df-goldenrod: rgb(225, 135, 39);
-// @df-navy: rgb(43, 77, 112);
+@three-col-up: ~"(min-width: 775px)";
+@four-col-up: ~"(min-width: 1030px)";
+@five-col-up: ~"(min-width: 1270px)";
+
 .chart-sub {
   margin-bottom: 0.3em;
   font-weight: 900;
@@ -43,7 +40,6 @@
 
   .up,.down {
     display: none;
-    color: navy;
     margin-left: 5px;
     float: right;
 
@@ -78,7 +74,15 @@
   margin: auto;
   border-top: 2px solid #aaa;
 
-
+  @media @three-col-up {
+    width: 768px;
+  }
+  @media @four-col-up {
+    width: 1030px;
+  }
+  @media @five-col-up {
+    width: 1270px;
+  }
 }
 
 
@@ -93,15 +97,16 @@
 .card {
   width: 48%;
   // height: 400px;
-  margin: 2px;
+  margin: 3px;
   font-family: sans-serif;
   font-size: 0.9em;
   flex: 1;
   align-self: stretch;
   display: inline-block;
   font-size: 15px;
-  padding-bottom: 40px;
-  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #aaa;
+  margin-bottom: 20px;
 
 
 
@@ -109,8 +114,9 @@
     height: 25px;
     // margin: 10px 10px 0px 10px;
   }
-  .description {
+  .headshot {
     // padding: 0px 10px 10px 10px;
+    img { width: 100%; }
   }
 
 
@@ -182,10 +188,10 @@
 
 
 
-  @media @desktop-up {
+  @media @three-col-up {
     width: 250px;
     // margin: 5px 0px 5px 0px;
-    margin: 5px 2px;
+    margin: 5px 2px 20px 2px;
   }
 }
 

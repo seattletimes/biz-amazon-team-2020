@@ -12,7 +12,7 @@ var tenureArray = ["0-4","5-9","10-14","15-19","20-24","25-29"];
 var ageArray = ["na","40-44","45-49","50-54","55-59","60-64"];
 
 
-var genderColors = ["#74c476","#238b45"];
+var genderColors = ["#c7e9c0","#006d2c"];
 var nameColors = ['#001969', '#10226e', '#1c2b74', '#253379', '#2d3c7f', '#344584', '#3b4e8a', '#41588f', '#486195', '#4e6b9a', '#5474a0', '#5a7ea6', '#6088ab', '#6792b1', '#6d9cb7', '#73a6bd', '#7ab0c2', '#80bac8', '#88c4ce', '#8fcfd4', '#98d9da', '#aee0e2'];
 var ageColors = ['#fdd0a2', '#fdae6b', '#fd8d3c', '#e6550d', '#a63603','#aaa'];
 var tenureColors = ['#bbb3d2', '#9c8dba', '#7e68a2', '#5f458b', '#402473', '#1b005c'];
