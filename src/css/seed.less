@@ -1,8 +1,7 @@
 @import "seattletimes";
 
 @three-col-up: ~"(min-width: 775px)";
-@four-col-up: ~"(min-width: 1030px)";
-@five-col-up: ~"(min-width: 1270px)";
+@four-col-up: ~"(min-width: 960px)";
 
 .chart-sub {
   margin-bottom: 0.3em;
@@ -70,18 +69,15 @@
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-  max-width: 1270px;
+  max-width: 960px;
   margin: auto;
   border-top: 2px solid #aaa;
 
   @media @three-col-up {
-    width: 768px;
+    width: 724px;
   }
   @media @four-col-up {
-    width: 1030px;
-  }
-  @media @five-col-up {
-    width: 1270px;
+    width: 960px;
   }
 }
 
@@ -105,17 +101,15 @@
   display: inline-block;
   font-size: 15px;
   padding-bottom: 20px;
-  border-bottom: 2px solid #aaa;
+  // border-bottom: 2px solid #aaa;
   margin-bottom: 20px;
 
 
 
   .color-bar {
     height: 25px;
-    // margin: 10px 10px 0px 10px;
   }
   .headshot {
-    // padding: 0px 10px 10px 10px;
     img { width: 100%; }
   }
 
@@ -186,19 +180,12 @@
     }
   }
 
-
-
   @media @three-col-up {
-    width: 250px;
+    width: 231px;
     // margin: 5px 0px 5px 0px;
-    margin: 5px 2px 20px 2px;
+    margin: 5px 4px 20px 4px;
   }
 }
-
-// .card > * {
-//   margin: 0;
-//   padding: 0;
-// }
 
 #keys {
   font-family: sans-serif;
