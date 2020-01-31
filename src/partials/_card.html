@@ -8,26 +8,14 @@
 
     <div class="name"><%= item.NameFirst %> <span class="last"><%= item.NameLast %></span>, <%= item.Age %></div>
 
-    <div class="position"><%= item.Title %>
-      <% if(item.Title2) { %>
-        <%= item.Title2 %>
-      <% } %>
+    <div class="position"><%= item.Title %><% if(item.Title2) { %>, <%= item.Title2 %><% } %>
     </div>
-
-    <!-- <div class="tenure"><%= item.Tenure %> years at Amazon</div> -->
-
-    <!-- <div class="age">Age</div>
-    <div class="ageBar">
-      <span class="bar"></span>
-      <div class="averageAge">&nbsp;</div>
-      <div class="avgLabel">51 avg.</div>
-    </div> -->
 
     <div class="eduHeader">Years at Amazon</div>
     <div class="tenureBar">
       <span class="bar"><%= item.Tenure %></span>
       <div class="avgTen">&nbsp;</div>
-      <div class="avgLabel2">16 avg.*</div>
+      <div class="avgLabel2">16 avg.</div>
     </div>
 
 
