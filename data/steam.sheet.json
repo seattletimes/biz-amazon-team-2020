@@ -16,7 +16,7 @@
     "MBA1": "",
     "HigherEd2": "",
     "MBA2": "",
-    "Major": "Electrical engineering and Computer science"
+    "Major": "Electrical engineering and computer science"
   },
   {
     "order": 21,
@@ -71,8 +71,8 @@
     "MBA1": "MS, management",
     "HigherEd2": "",
     "MBA2": "",
-    "Major": "computer science and mathematics",
-    "HigherEdMajor": "management"
+    "Major": "Computer science and mathematics",
+    "HigherEdMajor": "Management"
   },
   {
     "order": 18,
@@ -168,7 +168,7 @@
     "HigherEd2": "",
     "MBA2": "",
     "Major": "Education",
-    "HigherEdMajor": "logistics and transportation"
+    "HigherEdMajor": "Logistics and transportation"
   },
   {
     "order": 12,
@@ -232,7 +232,7 @@
     "NameFirst": "Paul",
     "NameLast": "Kotas",
     "Title": "Senior VP",
-    "Title2": "Amazon Advertising",
+    "Title2": "Amazon advertising",
     "Gender": "M",
     "Age": 59,
     "age_bucket": "55-59",
@@ -244,7 +244,7 @@
     "MBA1": "",
     "HigherEd2": "",
     "MBA2": "",
-    "Major": "Engineering Science",
+    "Major": "Engineering science",
     "HigherEdMajor": "Mathematics"
   },
   {
@@ -265,7 +265,7 @@
     "HigherEd2": "",
     "MBA2": "",
     "Major": "Mechanical engineering",
-    "HigherEdMajor": "Management and Mechanical Engineering"
+    "HigherEdMajor": "Management and mechanical engineering"
   },
   {
     "order": 1,
@@ -279,13 +279,13 @@
     "age_alpha": "c",
     "Tenure": 21,
     "Tenure_noper": "20-24",
-    "Education": "Indian Institute of Technology Kanpur, B.Tech.",
+    "Education": "Indian Institute of Technology Kanpur",
     "HigherEd": "Stanford University",
     "MBA1": "",
     "HigherEd2": "",
     "MBA2": "",
     "Major": "Computer science",
-    "HigherEdMajor": "computer science"
+    "HigherEdMajor": "Computer science"
   },
   {
     "order": 8,
@@ -304,7 +304,7 @@
     "MBA1": "",
     "HigherEd2": "",
     "MBA2": "",
-    "Major": "Economics and Computer science"
+    "Major": "Economics and computer science"
   },
   {
     "order": 10,
@@ -321,7 +321,7 @@
     "Education": "Stanford University",
     "HigherEd": "Stanford University",
     "MBA1": "",
-    "HigherEd2": "Northwestern Kellogg School of Management",
+    "HigherEd2": "Kellogg School of Management at Northwestern University",
     "MBA2": "MBA",
     "Major": "Industrial engineering",
     "HigherEdMajor": "Industrial engineering"
@@ -344,7 +344,7 @@
     "HigherEd2": "Greater Boston Executive Program, MIT Sloan School of Management",
     "MBA2": "",
     "Major": "Electronics and communication engineering",
-    "HigherEdMajor": "electrical engineering"
+    "HigherEdMajor": "Electrical engineering"
   },
   {
     "order": 17,
@@ -377,8 +377,8 @@
     "age_alpha": "e",
     "Tenure": 15,
     "Tenure_noper": "15-19",
-    "Education": "Trinity College-Hartford",
-    "HigherEd": "Northwestern Kellogg School of Management",
+    "Education": "Trinity College, Hartford",
+    "HigherEd": "Kellogg School of Management at Northwestern University",
     "MBA1": "MBA",
     "HigherEd2": "",
     "MBA2": "",
@@ -401,8 +401,8 @@
     "MBA1": "",
     "HigherEd2": "Macquarie University",
     "MBA2": "MBA",
-    "Major": "Applied Science",
-    "HigherEdMajor": "human resources"
+    "Major": "Applied science",
+    "HigherEdMajor": "Human resources"
   },
   {
     "order": 3,

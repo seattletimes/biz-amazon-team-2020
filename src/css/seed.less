@@ -145,7 +145,7 @@
 
 
   .name {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 900;
     line-height: 1em;
     margin-bottom: 5px;
@@ -155,6 +155,20 @@
     line-height: 0.9em;
     margin-bottom: 8px;
     font-style: italic;
+    height: auto;
+
+    @media @three-col-up {
+      height: 30px;
+    }
+
+  }
+
+  .sameHeight {
+    height: 55px;
+
+    @media @three-col-up {
+      height: auto;
+    }
 
   }
 
@@ -181,9 +195,9 @@
   }
 
   @media @three-col-up {
-    width: 231px;
+    width: 233px;
     // margin: 5px 0px 5px 0px;
-    margin: 5px 4px 20px 4px;
+    margin: 5px 3px 20px 3px;
   }
 }
 
