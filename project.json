@@ -6,7 +6,7 @@
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": ""
+      "path": "2020/business/amazon-management-team"
     }
   },
   "title": "",
@@ -18,5 +18,5 @@
   "sheets": ["1SsQqsLesdwtiiEtwRWpSsSBFmwO3bbGMkoJhfDGiMWQ"],
   "docs": [],
   "embedded": true,
-  "production": false
+  "production": true
 }
